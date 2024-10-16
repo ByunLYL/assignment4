@@ -24,3 +24,13 @@ test('selects an option', () => {
   userEvent.selectOptions(selectElement, '2');
   expect(mockSelect).toHaveBeenCalledWith('2');
 });
+
+test('renders the dropdown in disabled state', () => {
+  const options = [
+    { label: 'Option 1', value: '1' },
+    { label: 'Option 2', value: '2' },
+  ];
+  render(<Dropdown options={options} onSelect={() => {}} disabled={true} />);
+  const dropdownElement = screen.getByRole('combobox'); // 获取下拉框
+  expect(dropdownElement).toBeDisabled(); // 确保下拉框是禁用的
+});

@@ -15,3 +15,10 @@ Default.args = {
   bgImage: 'https://via.placeholder.com/800x400',
   title: 'Welcome to Our Website!',
 };
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  bgImage: 'https://via.placeholder.com/800x400',
+  title: 'This is disabled',
+  disabled: true, // 设置为 disabled
+};
