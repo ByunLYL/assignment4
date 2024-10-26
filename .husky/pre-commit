@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# run Prettier inspect
+npx prettier --check .
+
+# run ESLint inspect
+npx eslint .
+
+# run test
+npm test

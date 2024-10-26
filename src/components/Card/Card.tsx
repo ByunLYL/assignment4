@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { CardProps } from './Card.types';
+import React from "react";
+import styled from "styled-components";
+import { CardProps } from "./Card.types";
 
 const StyledCard = styled.div<{ disabled?: boolean }>`
   border: 1px solid #ccc;
@@ -8,9 +8,9 @@ const StyledCard = styled.div<{ disabled?: boolean }>`
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
-  background-color: ${({ disabled }) => (disabled ? '#f0f0f0' : '#fff')};
-  color: ${({ disabled }) => (disabled ? '#999' : '#000')};
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  background-color: ${({ disabled }) => (disabled ? "#f0f0f0" : "#fff")};
+  color: ${({ disabled }) => (disabled ? "#999" : "#000")};
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
 `;
 

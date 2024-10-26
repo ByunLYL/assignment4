@@ -1,10 +1,10 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import TableRow from './TableRow';
-import { TableRowProps } from './TableRow.types';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+import TableRow from "./TableRow";
+import { TableRowProps } from "./TableRow.types";
 
 export default {
-  title: 'Components/TableRow',
+  title: "Components/TableRow",
   component: TableRow,
 } as Meta;
 

@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { TextProps } from './Text.types';
+import React from "react";
+import styled from "styled-components";
+import { TextProps } from "./Text.types";
 
 const StyledText = styled.p`
   font-size: 16px;

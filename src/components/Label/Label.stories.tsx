@@ -1,10 +1,10 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import Label from './Label';
-import { LabelProps } from './Label.types';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+import Label from "./Label";
+import { LabelProps } from "./Label.types";
 
 export default {
-  title: 'Components/Label',
+  title: "Components/Label",
   component: Label,
 } as Meta;
 
@@ -12,5 +12,5 @@ const Template: StoryFn<LabelProps> = (args) => <Label {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  text: 'Label Text',
+  text: "Label Text",
 };

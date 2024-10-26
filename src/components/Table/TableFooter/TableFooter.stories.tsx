@@ -1,10 +1,10 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import TableFooter from './TableFooter';
-import { TableFooterProps } from './TableFooter.types';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+import TableFooter from "./TableFooter";
+import { TableFooterProps } from "./TableFooter.types";
 
 export default {
-  title: 'Components/TableFooter',
+  title: "Components/TableFooter",
   component: TableFooter,
 } as Meta;
 
