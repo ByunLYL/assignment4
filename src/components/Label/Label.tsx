@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { LabelProps } from "./Label.types";
+import React from 'react'
+import styled from 'styled-components'
+import { LabelProps } from './Label.types'
 
 const StyledLabel = styled.label`
   font-size: 16px;
   color: #333;
-`;
+`
 
 const Label: React.FC<LabelProps> = ({ text }) => {
-  return <StyledLabel>{text}</StyledLabel>;
-};
+  return <StyledLabel>{text}</StyledLabel>
+}
 
-export default Label;
+export default Label

@@ -1,12 +1,12 @@
-import React from "react";
-import { StoryFn, Meta } from "@storybook/react";
-import TableRow from "./TableRow";
-import { TableRowProps } from "./TableRow.types";
+import React from 'react'
+import { StoryFn, Meta } from '@storybook/react'
+import TableRow from './TableRow'
+import { TableRowProps } from './TableRow.types'
 
 export default {
-  title: "Components/TableRow",
+  title: 'Components/TableRow',
   component: TableRow,
-} as Meta;
+} as Meta
 
 const Template: StoryFn<TableRowProps> = (args) => (
   <table>
@@ -14,9 +14,9 @@ const Template: StoryFn<TableRowProps> = (args) => (
       <TableRow {...args} />
     </tbody>
   </table>
-);
+)
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   children: (
     <>
@@ -24,4 +24,4 @@ Default.args = {
       <td>Row 1 Column 2</td>
     </>
   ),
-};
+}

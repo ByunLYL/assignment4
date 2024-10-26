@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { HeroImageProps } from "./HeroImage.types";
+import React from 'react'
+import styled from 'styled-components'
+import { HeroImageProps } from './HeroImage.types'
 
 const StyledHeroImage = styled.div<{ bgImage: string; disabled?: boolean }>`
   height: 400px;
@@ -15,15 +15,15 @@ const StyledHeroImage = styled.div<{ bgImage: string; disabled?: boolean }>`
   opacity: ${({ disabled }) =>
     disabled ? 0.6 : 1}; /* 根据 disabled 状态调整透明度 */
   cursor: ${({ disabled }) =>
-    disabled ? "not-allowed" : "default"}; /* 根据 disabled 状态调整光标 */
-`;
+    disabled ? 'not-allowed' : 'default'}; /* 根据 disabled 状态调整光标 */
+`
 
 const HeroImage: React.FC<HeroImageProps> = ({ bgImage, title, disabled }) => {
   return (
     <StyledHeroImage bgImage={bgImage} disabled={disabled}>
       <h1>{title}</h1>
     </StyledHeroImage>
-  );
-};
+  )
+}
 
-export default HeroImage;
+export default HeroImage

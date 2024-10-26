@@ -14,8 +14,11 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Expose the port
-EXPOSE 8018
+# envirenment setting 8018
+ENV PORT=8018
 
 # Command to run the application
 CMD ["npm", "start"]
+
+# Expose the port
+EXPOSE 8018

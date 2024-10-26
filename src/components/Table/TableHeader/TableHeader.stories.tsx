@@ -1,20 +1,20 @@
-import React from "react";
-import { StoryFn, Meta } from "@storybook/react";
-import TableHeader from "./TableHeader";
-import { TableHeaderProps } from "./TableHeader.types";
+import React from 'react'
+import { StoryFn, Meta } from '@storybook/react'
+import TableHeader from './TableHeader'
+import { TableHeaderProps } from './TableHeader.types'
 
 export default {
-  title: "Components/TableHeader",
+  title: 'Components/TableHeader',
   component: TableHeader,
-} as Meta;
+} as Meta
 
 const Template: StoryFn<TableHeaderProps> = (args) => (
   <table>
     <TableHeader {...args} />
   </table>
-);
+)
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   children: (
     <>
@@ -24,4 +24,4 @@ Default.args = {
       </tr>
     </>
   ),
-};
+}

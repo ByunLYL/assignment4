@@ -1,12 +1,12 @@
-import React from "react";
-import { StoryFn, Meta } from "@storybook/react";
-import TableCell from "./TableCell";
-import { TableCellProps } from "./TableCell.types";
+import React from 'react'
+import { StoryFn, Meta } from '@storybook/react'
+import TableCell from './TableCell'
+import { TableCellProps } from './TableCell.types'
 
 export default {
-  title: "Components/TableCell",
+  title: 'Components/TableCell',
   component: TableCell,
-} as Meta;
+} as Meta
 
 const Template: StoryFn<TableCellProps> = (args) => (
   <table>
@@ -16,9 +16,9 @@ const Template: StoryFn<TableCellProps> = (args) => (
       </tr>
     </tbody>
   </table>
-);
+)
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
-  children: "Sample Cell",
-};
+  children: 'Sample Cell',
+}

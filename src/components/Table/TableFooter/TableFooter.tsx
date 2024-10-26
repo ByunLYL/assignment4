@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { TableFooterProps } from "./TableFooter.types";
+import React from 'react'
+import styled from 'styled-components'
+import { TableFooterProps } from './TableFooter.types'
 
 const StyledTableFooter = styled.tfoot`
   background-color: #f2f2f2;
-`;
+`
 
 const TableFooter: React.FC<TableFooterProps> = ({ children }) => {
-  return <StyledTableFooter>{children}</StyledTableFooter>;
-};
+  return <StyledTableFooter>{children}</StyledTableFooter>
+}
 
-export default TableFooter;
+export default TableFooter
