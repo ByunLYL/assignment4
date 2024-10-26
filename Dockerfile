@@ -1,26 +1,21 @@
-# Use an official Node.js runtime as a parent image
-FROM node:16
+# Use the official Node.js image as a base
+FROM node:14
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Set the working directory
+WORKDIR /liu_yulin_ui_garden_build_checks
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-
-# Install any needed packages specified in package.json
+# Copy package.json and install dependencies
+COPY package.json ./
 RUN npm install
 
-# Copy the rest of your application code
+# Copy the rest of the application files
 COPY . .
 
-# Build the application for production
+# Build the application
 RUN npm run build
 
-# Install serve to serve the build files
-RUN npm install -g serve
+# Expose the port
+EXPOSE 8018
 
-# Make port 8083 available to the world outside this container
-EXPOSE 8083
-
-# Define the command to run the application
-CMD ["serve", "-s", "build", "-l", "8083"]
+# Command to run the application
+CMD ["npm", "start"]
