@@ -4,7 +4,7 @@
 # run Prettier inspect
 npx prettier --check .
 
-# run ESLint inspect
+
 npx eslint .
 
 # run test
