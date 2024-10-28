@@ -63,5 +63,5 @@ This project is a React component library built with Storybook.
 3. Build the Docker image:
 
    ```bash
-   docker build -t lastName_firstName_coding_assignment13 .
-   docker run -p 8018:8018 lastName_firstName_coding_assignment13
+   docker build -t liu_yulin_coding_assignment13 .
+   docker run -p 8018:8018 liu_yulin_coding_assignment13
