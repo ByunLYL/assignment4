@@ -1,3 +1,3 @@
 export interface TableFooterProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }

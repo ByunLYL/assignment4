@@ -1,3 +1,3 @@
 export interface TableHeaderProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
