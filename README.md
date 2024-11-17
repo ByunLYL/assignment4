@@ -45,24 +45,16 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# UI Garden Component Library
 
-## Getting Started
 
-This project is a React component library built with Storybook.
 
-### Prerequisites
+# Liu_Yulin_coding_assignment14 - React Portfolio Site
 
-- Docker
-- Node.js
+This project hosts a production build of a React portfolio site in a Docker container.
 
-### Running the Application
+## Instructions to Build and Run the Container
 
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Build the Docker image:
-
+1. **Build the Docker Image**
    ```bash
-   docker build -t liu_yulin_coding_assignment13 .
-   docker run -p 8018:8018 liu_yulin_coding_assignment13
-   ```
+   docker build -t liu_yulin_coding_assignment14 .
+

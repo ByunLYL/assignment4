@@ -26,7 +26,8 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "semi": ["error", "never"],
+    "semi": "off",
+    "react/no-unescaped-entities": "off",
     "quotes": ["error", "single"],
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-empty-function": "off"
