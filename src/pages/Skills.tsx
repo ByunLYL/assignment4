@@ -13,31 +13,37 @@ const Home: React.FC = () => {
         <Text content="Exploring technology, creating solutions, and growing every day." />
       </header>
 
-      {/* Basic Information */}
-      <section style={styles.section}>
-        <h1>Basic Information</h1>
-        <p style={styles.paragraph}>
-          Hi, I'm a passionate developer with experience in building dynamic and responsive web applications. I love exploring new technologies and solving real-world problems through code.
-        </p>
-      </section>
 
+
+      {/* Skills */}
+      <section style={styles.section}>
+        <h1>Skills</h1>
+        <p style={styles.paragraph}>Here are some of the technical skills I bring to the table:</p>
+        <div style={styles.skillsGrid}>
+          <div style={styles.skillCategory}>
+            <h3>Languages/Frameworks</h3>
+            <ul style={styles.skillList}>
+              <li>JavaScript/TypeScript</li>
+              <li>React/Next.js</li>
+              <li>Node.js/Express</li>
+            </ul>
+          </div>
+          <div style={styles.skillCategory}>
+            <h3>Tools</h3>
+            <ul style={styles.skillList}>
+              <li>Git/GitHub</li>
+              <li>Webpack</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
 };
 
-const resources = [
-  {
-    image: 'https://miro.medium.com/v2/resize:fit:1358/1*KmgHVtbY9uJEoT-_9T8Nvg.png',
-    title: 'React Documentation',
-    description: 'The official React docs for learning and reference.',
-  },
-  {
-    image: 'https://static1.xdaimages.com/wordpress/wp-content/uploads/2022/03/moz_blog_header_MDN-Intro.jpg',
-    title: 'MDN Web Docs',
-    description: 'Comprehensive resources for web developers.',
-  },
-];
+
 
 const styles: { [key: string]: CSSProperties } = {
   container: {

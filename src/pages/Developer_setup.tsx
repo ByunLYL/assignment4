@@ -13,15 +13,31 @@ const Home: React.FC = () => {
         <Text content="Exploring technology, creating solutions, and growing every day." />
       </header>
 
-      {/* Basic Information */}
+
+      {/* Developer Setup */}
       <section style={styles.section}>
-        <h1>Basic Information</h1>
-        <p style={styles.paragraph}>
-          Hi, I'm a passionate developer with experience in building dynamic and responsive web applications. I love exploring new technologies and solving real-world problems through code.
-        </p>
+        <h1>Developer Setup</h1>
+        <div style={styles.setupGrid}>
+          <div style={styles.setupItem}>
+            <h3>VS Code Setup</h3>
+            <p style={styles.paragraph}>
+              My VS Code is configured with ESLint, Prettier, and custom themes for better productivity.
+            </p>
+          </div>
+          <div style={styles.setupItem}>
+            <h3>Terminal Setup</h3>
+            <p style={styles.paragraph}>
+              I use Oh My Zsh with plugins for Git and syntax highlighting.
+            </p>
+          </div>
+          <div style={styles.setupItem}>
+            <h3>Preferred Editor Font</h3>
+            <p style={styles.paragraph}>
+              Fira Code with ligatures enabled for clean and efficient coding.
+            </p>
+          </div>
+        </div>
       </section>
-
-
     </div>
   );
 };

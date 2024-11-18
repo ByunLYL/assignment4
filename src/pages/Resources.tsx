@@ -13,14 +13,23 @@ const Home: React.FC = () => {
         <Text content="Exploring technology, creating solutions, and growing every day." />
       </header>
 
-      {/* Basic Information */}
-      <section style={styles.section}>
-        <h1>Basic Information</h1>
-        <p style={styles.paragraph}>
-          Hi, I'm a passionate developer with experience in building dynamic and responsive web applications. I love exploring new technologies and solving real-world problems through code.
-        </p>
-      </section>
 
+
+
+      {/* Resources */}
+      <section style={styles.section}>
+        <h1>Resources</h1>
+        <div style={styles.resourceContainer}>
+          {resources.map((resource, index) => (
+            <div key={index} style={styles.resourceCard}>
+              <Img src={resource.image} alt={resource.title} />
+              <h3 style={styles.resourceTitle}>{resource.title}</h3>
+              <p style={styles.paragraph}>{resource.description}</p>
+              <Button text="Visit"/>
+            </div>
+          ))}
+        </div>
+      </section>
 
     </div>
   );

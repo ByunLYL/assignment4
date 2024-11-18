@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+import Resources from './pages/Resources';
+import Developer_setup from './pages/Developer_setup';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +19,15 @@ const App: React.FC = () => {
             <li style={styles.navItem}>
               <Link to="/projects" style={styles.link}>Project</Link>
             </li>
+            <li style={styles.navItem}>
+              <Link to="/skills" style={styles.link}>Skills</Link>
+            </li>
+            <li style={styles.navItem}>
+              <Link to="/resources" style={styles.link}>Resources</Link>
+            </li>
+            <li style={styles.navItem}>
+              <Link to="/developer_setup" style={styles.link}>Developer Setup</Link>
+            </li>
           </ul>
         </nav>
 
@@ -23,6 +35,9 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/developer_setup" element={<Developer_setup />} />
         </Routes>
       </div>
     </Router>
